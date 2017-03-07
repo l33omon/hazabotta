@@ -1,0 +1,7 @@
+require 'discordrb'
+
+bot = Discordrb::Bot.new token: 'Mjg4NDY0Njc2MDU5MjE3OTIx.C5-P7w.oN8XYxYpM_ELfcD9oW3XEeVI6dM', client_id: 288464676059217921
+
+bot.message(with_text: "h!hello") do |event|
+  event.respond "Fuck off, #{event.user.name}."
+end
